@@ -1,6 +1,9 @@
 # Ember-fetchjax
 
-This README outlines the details of collaborating on this Ember addon.
+Ember addon to use Fetch or AJAX.
+
+Status: Beta, extracting from ember-jsonapi-resources addon
+
 
 ## Installation
 
@@ -11,8 +14,9 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Running
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* `ember serve --proxy http://api.pixelhandler.com`
+* Try with Fetch or AJAX [http://localhost:4200/fetch](http://localhost:4200/fetch).
+* AJAX only [http://localhost:4200/ajax](http://localhost:4200/ajax).
 
 ## Running Tests
 
