@@ -2,10 +2,49 @@
 
 Ember addon to use Fetch or AJAX.
 
-Status: Beta, extracting from ember-jsonapi-resources addon
+
+## Usage
+
+Example route the forces the use of XHR:
+
+```js
+import Ember from 'ember';
+import FetchOrAjax from 'dummy/utils/fetchjax';
+
+const fetchjax = new FetchOrAjax({useAjax: true, ajax: Ember.$.ajax});
+
+export default Ember.Route.extend({
+  model() {
+    return fetchjax.fetch('/api/v1/posts', {method: 'GET'});
+  }
+});
+
+```
+
+Example route that defaults to use Fetch, but falls back to AJAX:
+
+```js
+import Ember from 'ember';
+import FetchOrAjax from 'dummy/utils/fetchjax';
+
+const fetchjax = new FetchOrAjax({useAjax: true, ajax: Ember.$.ajax});
+
+export default Ember.Route.extend({
+  model() {
+    return fetchjax.fetch('/api/v1/posts', {method: 'GET'});
+  }
+});
+
+```
 
 
 ## Installation
+
+Install addon…
+
+* `ember install ember-fetchjax`
+
+Install for local development…
 
 * `git clone <repository-url>` this repository
 * `cd ember-fetchjax`
