@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "posts",
+      "links": {
+        "self": "http://api.pixelhandler.com/api/v1/posts/1"
+      },
+      "attributes": {
+        "title": "Practical: Deploy an Ember App with ember-cli-deploy"
+      }
+    },
+    {
+      "id": "2",
+      "type": "posts",
+      "links": {
+        "self": "http://api.pixelhandler.com/api/v1/posts/2"
+      },
+      "attributes": {
+        "title": "How Much Faster is HTMLBars Than Handlebars?"
+      }
+    },
+    {
+      "id": "3",
+      "type": "posts",
+      "links": {
+        "self": "http://api.pixelhandler.com/api/v1/posts/3"
+      },
+      "attributes": {
+        "title": "EmberConf 2015 - March 4th (day 2)"
+      }
+    },
+    {
+      "id": "4",
+      "type": "posts",
+      "links": {
+        "self": "http://api.pixelhandler.com/api/v1/posts/4"
+      },
+      "attributes": {
+        "title": "EmberConf 2015 - March 3rd (day 1)"
+      }
+    },
+    {
+      "id": "5",
+      "type": "posts",
+      "links": {
+        "self": "http://api.pixelhandler.com/api/v1/posts/5"
+      },
+      "attributes": {
+        "title": "A Bet on Web Components and Ember.Component Synchronicity"
+      }
+    }
+  ],
+  "meta": {
+    "page": {
+      "sort": "-date",
+      "total": 66,
+      "limit": "5",
+      "offset": "0"
+    }
+  }
+}

@@ -1,7 +1,10 @@
 {
   "name": "ember-fetchjax",
   "dependencies": {
-    "ember": "~2.9.0",
+    "ember": "components/ember#lts-2-4",
     "ember-cli-shims": "0.1.3"
+  },
+  "resolutions": {
+    "ember": "lts-2-4"
   }
 }

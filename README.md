@@ -1,6 +1,20 @@
 # Ember-fetchjax
 
-Ember addon to use Fetch or AJAX.
+Ember Addon to use Fetch or AJAX.
+
+The default behavior is to use Fetch when available, otherwise to use AJAX.
+
+- Provides a set utils to use in an Ember app, however the utils do
+  not require Ember, they are just JavaScript classes
+  - See the addon/utils directory
+- No polyfill for `window.fetch` or `window.Promise` required
+  - If you want to use a polyfill see the bower projects `es6-promise`
+    and `fetch`
+- Setup a `fetchjax.fetch` method to use AJAX or Fetch
+  - `FetchOrAjax` constructor requires dependencies, e.g. `jQuery.ajax`
+  - Instance defaults to native Fetch and Promise, unless you pass in
+    `Ember.RSVP.Promise`, or another `fetch` method
+- See the `dummy` app and acceptance tests for example use
 
 
 ## Usage
@@ -9,7 +23,7 @@ Example route the forces the use of XHR:
 
 ```js
 import Ember from 'ember';
-import FetchOrAjax from 'dummy/utils/fetchjax';
+import FetchOrAjax from 'ember-fetchjax/utils/fetchjax';
 
 const fetchjax = new FetchOrAjax({useAjax: true, ajax: Ember.$.ajax});
 
@@ -25,7 +39,7 @@ Example route that defaults to use Fetch, but falls back to AJAX:
 
 ```js
 import Ember from 'ember';
-import FetchOrAjax from 'dummy/utils/fetchjax';
+import FetchOrAjax from 'ember-fetchjax/utils/fetchjax';
 
 const fetchjax = new FetchOrAjax({useAjax: true, ajax: Ember.$.ajax});
 
