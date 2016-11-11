@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "pixelhandler/ember-fetchjax",
+  "repository": "git@github.com:pixelhandler/ember-fetchjax.git",
   "engines": {
     "node": ">= 0.12.0"
   },
