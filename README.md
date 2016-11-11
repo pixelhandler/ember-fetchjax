@@ -23,13 +23,13 @@ The default behavior is to use Fetch when available, otherwise to use AJAX.
 
 ## Usage
 
-Example route the forces the use of XHR:
+Example route that defaults to use Fetch, but falls back to AJAX:
 
 ```js
 import Ember from 'ember';
 import FetchOrAjax from 'ember-fetchjax/utils/fetchjax';
 
-const fetchjax = new FetchOrAjax({useAjax: true, ajax: Ember.$.ajax});
+const fetchjax = new FetchOrAjax({ajax: Ember.$.ajax});
 
 export default Ember.Route.extend({
   model() {
@@ -39,7 +39,7 @@ export default Ember.Route.extend({
 
 ```
 
-Example route that defaults to use Fetch, but falls back to AJAX:
+Example route the forces the use of XHR:
 
 ```js
 import Ember from 'ember';
