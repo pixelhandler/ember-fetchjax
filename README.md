@@ -8,7 +8,7 @@ The default behavior is to use Fetch when available, otherwise to use AJAX.
 [![Ember Observer Score](http://emberobserver.com/badges/ember-fetchjax.svg)](http://emberobserver.com/addons/ember-fetchjax)
 [![npm](https://img.shields.io/npm/v/ember-fetchjax.svg)](https://www.npmjs.com/package/ember-fetchjax)
 
-- Provides a set utils to use in an Ember app, however the utils do
+- Provides a set of utils to use in an Ember app, however the utils do
   not require Ember, they are just JavaScript classes
   - See the addon/utils directory
 - No polyfill for `window.fetch` or `window.Promise` required
