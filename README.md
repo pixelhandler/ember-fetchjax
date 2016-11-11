@@ -4,6 +4,10 @@ Ember Addon to use Fetch or AJAX.
 
 The default behavior is to use Fetch when available, otherwise to use AJAX.
 
+[![Build Status](https://travis-ci.org/pixelhandler/ember-fetchjax.svg?branch=master)](https://travis-ci.org/pixelhandler/ember-fetchjax)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-fetchjax.svg)](http://emberobserver.com/addons/ember-fetchjax)
+[![npm](https://img.shields.io/npm/v/ember-fetchjax.svg)](https://www.npmjs.com/package/ember-fetchjax)
+
 - Provides a set utils to use in an Ember app, however the utils do
   not require Ember, they are just JavaScript classes
   - See the addon/utils directory

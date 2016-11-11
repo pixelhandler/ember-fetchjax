@@ -1,6 +1,6 @@
 {
   "name": "ember-fetchjax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Ember addon to use Fetch or AJAX",
   "directories": {
     "doc": "doc",
@@ -41,6 +41,8 @@
     "loader.js": "^4.0.10"
   },
   "keywords": [
+    "fetch",
+    "ajax",
     "ember-addon"
   ],
   "dependencies": {
