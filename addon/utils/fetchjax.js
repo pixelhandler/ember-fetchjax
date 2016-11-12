@@ -63,7 +63,7 @@ export default class FetchOrAjax {
     @return {Promise}
   */
   fetch(url, options = {}) {
-    if (!!options.serialize && typeof options.body !== 'string' &&
+    if (!!options.body && typeof options.body !== 'string' &&
         typeof this.serialize === 'function') {
       options.body = this.serialize(options.body);
     }

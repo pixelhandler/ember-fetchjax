@@ -35,8 +35,10 @@ export default class Fetch {
           this.fetchClientErrorHandler(response, reject);
         } else if (response.status === 204) {
           this.fetchNoContentHandler(response, resolve);
-        } else {
+        } else if (response.status >= 200) {
           return this.fetchSuccessHandler(response, resolve, options);
+        } else {
+          this.fetchErrorHandler(response, reject);
         }
       }).catch((error) => {
         this.fetchErrorHandler(error, reject);
@@ -121,7 +123,7 @@ export default class Fetch {
     return response.json().then((json) => {
       let payload = json;
       if (typeof this.deserialize === 'function') {
-        payload = this.deserialize(json, response.headers);
+        payload = this.deserialize(json, response.headers, options);
       }
       if (typeof this.cacheResponse === 'function') {
         this.cacheResponse({
