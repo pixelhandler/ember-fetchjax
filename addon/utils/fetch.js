@@ -143,9 +143,9 @@ function parseFetchErrorText(text, response) {
   } catch (err) {
     self.console.warn(err);
     json = {
-      "errors": [{
-        "status": response.status,
-        "detail": text
+      'errors': [{
+        'status': response.status,
+        'detail': text
       }]
     };
   }

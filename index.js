@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-fetchjax'
+  name: 'ember-fetchjax',
+
+  isDevelopingAddon: function() {
+    return true;
+  }
 };

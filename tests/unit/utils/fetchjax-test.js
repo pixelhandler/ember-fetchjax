@@ -1,5 +1,5 @@
 /*globals self: false */
-import FetchOrAjax from 'dummy/utils/fetchjax';
+import FetchOrAjax from 'ember-fetchjax/utils/fetchjax';
 import { module, test } from 'qunit';
 import sinon from 'sinon';
 import assertFetchUnsupported from 'dummy/tests/helpers/fetch';
