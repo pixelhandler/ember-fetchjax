@@ -5,7 +5,8 @@
   @param {Object} response
   @return {Error}
 */
-export function ServerError(message = 'Server Error', response = null) {
+export function ServerError(message, response = null) {
+  message = message || 'Server Error';
   let _error = Error.prototype.constructor.call(this, message);
   _error.name = this.name = 'ServerError';
   this.stack = _error.stack;
@@ -24,7 +25,8 @@ ServerError.prototype = errorProtoFactory(ServerError);
   @param {Object} response
   @return {Error}
 */
-export function ClientError(message = 'Client Error', response = null) {
+export function ClientError(message, response = null) {
+  message = message || 'Client Error';
   let _error = Error.prototype.constructor.call(this, message);
   _error.name = this.name = 'ClientError';
   this.stack = _error.stack;
@@ -43,7 +45,8 @@ ClientError.prototype = errorProtoFactory(ClientError);
   @param {Error|Object} error or response object
   @return {Error}
 */
-export function FetchError(message = 'Fetch Error', response = null) {
+export function FetchError(message, response = null) {
+  message = message || 'Fetch Error';
   let _error = Error.prototype.constructor.call(this, message);
   _error.name = this.name = 'FetchError';
   this.stack = (response && response.stack) ? response.stack : _error.stack;
